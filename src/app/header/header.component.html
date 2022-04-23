@@ -1,0 +1,13 @@
+<nb-layout>
+  <nb-layout-header>
+    <h1>{{ title }}</h1>
+
+    <!-- catching the button emtting over here toggleAddTask() 
+       and fire it off in the header.component.ts 
+  -->
+    <nb-layout-column>
+      <app-button color="green" text="ADD" (btnClick)="toggleAddTask()">
+      </app-button>
+    </nb-layout-column>
+  </nb-layout-header>
+</nb-layout>

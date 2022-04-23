@@ -1,0 +1,18 @@
+development mode won't work 
+- not displaying the console.log message even thought i enable it the prod mode.
+
+
+
+** note
+
+npm start
+
+This executes an arbitrary command specified in its "scripts" object's "start" property of the package. If the "scripts" object does not specify a "start" property, it will run server.js node.
+
+ng serve
+
+Use webpack-dev-server to create, monitor, and serve the application from local memory. When you're prepared for deployment
+
+** note 
+
+An HTTP 304 not modified status code means that the website you're requesting hasn't been updated since the last time you accessed it. Typically, your browser will save (or cache) web pages so it doesn't have to repeattedly download the same information. This is an attempt to speed up page delivery.

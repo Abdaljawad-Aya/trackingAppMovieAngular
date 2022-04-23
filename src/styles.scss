@@ -1,0 +1,18 @@
+@use 'themes' as *;
+
+@use '@nebular/theme/styles/globals' as *;
+
+@include nb-install() {
+    background: nb-theme(
+      color-success-active-border
+    );
+  @include nb-theme-global(
+  );
+};
+// @import 'themes';
+
+// @import '~@nebular/theme/styles/globals';
+
+// @include nb-install() {
+//   @include nb-theme-global();
+// };
