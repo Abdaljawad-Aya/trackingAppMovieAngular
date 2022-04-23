@@ -1,20 +1,12 @@
-<!-- <p>button works!</p> -->
-<nb-card-header></nb-card-header>
-<nb-card>
   <nb-card-body>
-  <!-- as for styling I can use a directive style [ngStyle]-->
-  <!-- but for now I dont want to use it -->
-  <!-- 
+    <!-- as for styling I can use a directive style [ngStyle]-->
+    <!-- but for now I dont want to use it -->
+    <!-- 
        [ngStyle]="{'background-color':color}"
    -->
-   <nb-layout-column>
-    <button  
-       (click)="onClick"
-       nbButton 
-       class="colored-column-basic" 
-       status="success">
-       {{ text }}
-    </button>
+    <nb-layout-column>
+      <button (click)="onClick" nbButton status="success">
+        {{ text }}
+      </button>
     </nb-layout-column>
   </nb-card-body>
-</nb-card>

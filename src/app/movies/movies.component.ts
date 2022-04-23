@@ -10,10 +10,11 @@ export class MoviesComponent implements OnInit {
   movies: Movie[] = [];
   constructor(private movieService:MovieService) { }
 
-// I need to use Observable because usually I'm going to deal with asynchronously data
-// if I'm going to fetch from the server.
+    // I need to use Observable because usually 
+    // I'm going to deal with asynchronously data
+    // if I'm going to fetch from the server.
 
-// void means this function is empty
+    // void means this function is empty
   ngOnInit(): void {
     // this like the promise in javascript => .then and so on
     // i used subscribe because I dealing with the Observable
@@ -22,7 +23,8 @@ export class MoviesComponent implements OnInit {
   }
 
   deleteMovie(movie: Movie) {
-    // what this code is doing is when clicked on it will delete from the server(movie.service.ts) 
+    // what this code is doing is when clicked on it will 
+    // delete from the server(movie.service.ts) 
     // we defined a constant named url 
 
     // just passed in the deleteMovie(movie) which ever that movie is 
@@ -40,7 +42,8 @@ export class MoviesComponent implements OnInit {
     // taking the movie that is passed in 
     // and set it to the opposite of what ever it is 
     // which means if I set a true to some movie in db.json 
-    // when I double click it on the UI will be become false  
+    // when I double click it on the UI will be become false,  
+    // and it also reflect on my db.json
     movie.Feature = !movie.Feature;
     this.movieService.updateMovieFeature(movie).subscribe()
     // console.log(movie.Feature);

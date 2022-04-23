@@ -9,7 +9,7 @@ import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 export class ButtonComponent implements OnInit {
   // this Input(metadata) is a reusable way I can use it anywhere
   @Input() text:any;
-  @Input() color: any;
+  // @Input() color: any;
   // Outputting the eventemitter
   @Output() btnClick = new EventEmitter();
   constructor() { }

@@ -8,7 +8,7 @@ import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import {
   NbButtonModule,
-  // NbIconModule,
+  NbIconModule,
   // NbInputModule, 
   NbLayoutModule, 
   NbSidebarModule, 
@@ -47,6 +47,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     BrowserAnimationsModule,
     NbThemeModule.forRoot({ name: 'trackApp' }),
     NbEvaIconsModule,
+    NbIconModule,
     FormsModule,
     AppRoutingModule,
     FontAwesomeModule
