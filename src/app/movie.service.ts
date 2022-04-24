@@ -58,6 +58,10 @@ export class MovieService {
     // I want HttpHeaders to handle the request
     return this.http.put<Movie>(url, movie, httpOptions)
   }
+
+  addMovie(movie: Movie):Observable<Movie> {
+    return this.http.post<Movie>(this.apiUrl, movie, httpOptions)
+  } 
  }
 
 

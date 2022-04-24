@@ -9,15 +9,16 @@ import { HttpClientModule } from '@angular/common/http';
 import {
   NbButtonModule,
   NbIconModule,
-  // NbInputModule, 
+  NbInputModule, 
   NbLayoutModule, 
   NbSidebarModule, 
   NbThemeModule,
-  NbCardModule
+  NbCardModule,
+  NbCheckboxModule,
+  NbDatepickerModule
 } from '@nebular/theme';
 import { FormsModule } from '@angular/forms'
 import { AppComponent } from './app.component';
-import { TestComponent } from './test/test.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { AppRoutingModule } from './app-routing.module';
@@ -26,15 +27,16 @@ import { ButtonComponent } from './button/button.component';
 import { MoviesComponent } from './movies/movies.component';
 import { MoviesItemComponent } from './movies-item/movies-item.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AddMovieComponent } from './add-movie/add-movie.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TestComponent,
     HeaderComponent,
     ButtonComponent,
     MoviesComponent,
-    MoviesItemComponent
+    MoviesItemComponent,
+    AddMovieComponent
   ],
   imports: [
     HttpClientModule,
@@ -50,8 +52,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     NbIconModule,
     FormsModule,
     AppRoutingModule,
-    FontAwesomeModule
-    // NbInputModule,
+    FontAwesomeModule,
+    NbCheckboxModule,
+    NbDatepickerModule,
+    NbInputModule
     // NbIconModule,
   ],
   providers: [],

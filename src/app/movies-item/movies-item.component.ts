@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Movie } from "../Movie";
 
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
+// import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-movies-item',
@@ -12,7 +12,7 @@ export class MoviesItemComponent implements OnInit {
   // from what i understand is Typescript 2.7 an above 
   // includes a strict class checking where all the 
   // properties should be initialized in the constructor.
-  // A workaround is to add the ! as postfix to the variable name
+  // A workaround is to add the exclamation mark ! as postfix to the variable name
   @Input() movie!: Movie;
 
   // since there is onDeleteMovie() I will go to the parent component
@@ -23,7 +23,7 @@ export class MoviesItemComponent implements OnInit {
   @Output() onToggleFeatured: EventEmitter<Movie> = new 
   EventEmitter();
 
-  faTimes = faTimes;
+  // faTimes = faTimes;
   constructor() { }
 
   ngOnInit(): void {}

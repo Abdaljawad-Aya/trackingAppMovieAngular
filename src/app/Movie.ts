@@ -1,5 +1,3 @@
-import { Variable } from "@angular/compiler/src/render3/r3_ast";
-
 export interface Movie {
     id : number,
     Title: string;
@@ -8,4 +6,5 @@ export interface Movie {
     Feature: boolean;
     Poster: string;
     imdbID: string;
+    
 }

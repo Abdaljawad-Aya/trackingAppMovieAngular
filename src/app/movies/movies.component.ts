@@ -1,6 +1,9 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Movie } from "../Movie";
 import { MovieService } from "../movie.service";
+
+
+
 @Component({
   selector: 'app-movies',
   templateUrl: './movies.component.html',
@@ -9,7 +12,7 @@ import { MovieService } from "../movie.service";
 export class MoviesComponent implements OnInit {
   movies: Movie[] = [];
   constructor(private movieService:MovieService) { }
-
+   
     // I need to use Observable because usually 
     // I'm going to deal with asynchronously data
     // if I'm going to fetch from the server.
@@ -47,6 +50,12 @@ export class MoviesComponent implements OnInit {
     movie.Feature = !movie.Feature;
     this.movieService.updateMovieFeature(movie).subscribe()
     // console.log(movie.Feature);
+  }
+
+  addMovie(movie: Movie) {
+    // console.log(movie);
+    this.movieService.addMovie(movie)
+        .subscribe((movie) => (this.movies.push(movie)));
   }
 
 }

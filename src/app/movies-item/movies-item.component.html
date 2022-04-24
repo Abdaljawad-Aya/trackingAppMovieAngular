@@ -1,12 +1,13 @@
 <nb-card>
-  <nb-card-body>
+  <nb-card-body [ngClass]="{Feature: movie.Feature}" class="movie" (dblclick)="onToggle(movie)">
     <!-- if the movie is featured then display a colored border -->
     <!-- used an event called dblclick then passed in the task-->
-    <section [ngClass]="{Feature: movie.Feature}" class="movie" (dblclick)="onToggle(movie)">
-      <h3>{{ movie.Title }}
-        <nb-icon (click)="onDelete(movie)" icon="close"></nb-icon>
-      </h3>
-      <h3>{{ movie.Year }}</h3>
-    </section>
+    <h4>{{ movie.Title }}
+      <nb-icon (click)="onDelete(movie)" icon="trash-2"></nb-icon>
+    </h4>
+    <p><b>Year:   </b>{{ movie.Year }}</p>
+    <p><b>imdbID: </b>{{ movie.imdbID }}</p>
+    <p><b>Type:   </b>{{ movie.Type }}</p>
+    <img src="{{ movie.Poster }}" alt="" style="width:20%">
   </nb-card-body>
 </nb-card>

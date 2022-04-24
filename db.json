@@ -53,8 +53,86 @@
       "Feature": false,
       "Type": "movie",
       "Poster": "https://m.media-amazon.com/images/M/MV5BMTcyNTEyOTY0M15BMl5BanBnXkFtZTgwOTAyNzU3MDI@._V1_SX300.jpg"
+    },
+    {
+      "id": 9,
+      "Title": "The King of Comedy",
+      "Year": "1982",
+      "imdbID": "tt0085794",
+      "Feature": false,
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMTViNjlkYjgtMmE3Zi00ZGVkLTkyMjMtNzc3YzAwNzNiODQ1XkEyXkFqcGdeQXVyMjA0MzYwMDY@._V1_SX300.jpg"
+    },
+    {
+      "id": 11,
+      "Title": "The Bugs Bunny/Looney Tunes Comedy Hour",
+      "Year": "1985–1986",
+      "imdbID": "tt0088491",
+      "Feature": false,
+      "Type": "series",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMDEwNTAwNjMtNTgwZC00Y2RjLTliOTYtZWI4NGNlNjI4ZTVjXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_SX300.jpg"
+    },
+    {
+      "id": 12,
+      "Title": "Fear City: A Family-Style Comedy",
+      "Year": "1994",
+      "imdbID": "tt0109440",
+      "Feature": false,
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMjVlZDliMWItMDI3ZS00OTc3LTlmZWYtZmMxZDlkMTlhYTNhXkEyXkFqcGdeQXVyMTYzMDM0NTU@._V1_SX300.jpg"
+    },
+    {
+      "id": 13,
+      "Title": "The Broken Hearts Club: A Romantic Comedy",
+      "Year": "2000",
+      "imdbID": "tt0222850",
+      "Feature": false,
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMmZlODkzNmItZmIwZi00OGYxLTkwMjQtMzlhYmYwNjMwNzlmXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+    },
+    {
+      "id": 14,
+      "Title": "King of Comedy",
+      "Year": "1999",
+      "imdbID": "tt0188766",
+      "Feature": false,
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BYjg4NWNjYWItZTQzOS00MzE2LWE4MjEtOTU1NjIxNTBjMDY3XkEyXkFqcGdeQXVyOTMzMDk1NTY@._V1_SX300.jpg"
+    },
+    {
+      "id": 15,
+      "Title": "Louis C.K.: Live at the Comedy Store",
+      "Year": "2015",
+      "imdbID": "tt4368814",
+      "Feature": false,
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BODJlMmIyNjEtZDQ0ZS00MGIyLWEyZmYtOTQyYTQyMWJkODhmXkEyXkFqcGdeQXVyMjQ0ODQ0MzQ@._V1_SX300.jpg"
+    },
+    {
+      "id": 17,
+      "Title": "The Comedy of Terrors",
+      "Year": "1963",
+      "imdbID": "tt0056943",
+      "Feature": false,
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BYWRmNGQxM2MtN2I5OS00NTc1LTlmNGEtMGYwYTIyMjE3NjI5XkEyXkFqcGdeQXVyMDI2NDg0NQ@@._V1_SX300.jpg"
+    },
+    {
+      "id": 18,
+      "Title": "The Original Kings of Comedy",
+      "Year": "2000",
+      "imdbID": "tt0236388",
+      "Feature": false,
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMTI5NDY1NDU1M15BMl5BanBnXkFtZTcwODcyNTMyMQ@@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Dude, Where's My Car?",
+      "Type": "Comedy",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNzRmN2NjNzktOWE1My00NjVlLWFhNjYtZmFkMzM5YTA2ZTFlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+      "Year": 2000,
+      "imdbID": 242423,
+      "id": 19
     }
-  ],
-  "totalResults": "501",
-  "Response": "True"
+  ]
 }

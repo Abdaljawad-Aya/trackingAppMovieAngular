@@ -1,7 +1,8 @@
 <!-- we want to pass property movie that will be equal to that indivisual movie  -->
+<app-add-movie (onAddMovie)="addMovie($event)"></app-add-movie>
 <app-movies-item 
    *ngFor="let movie of movies" 
-   [movie]="movie" 
+   [movie]="movie"  
    (onDeleteMovie)="deleteMovie(movie)"
    (onToggleFeatured)="toggleFeatured(movie)"  
 ></app-movies-item>

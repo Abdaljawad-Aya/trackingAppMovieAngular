@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 // import { ApiService } from "../api.service";
+import { UiService } from "../ui.service";
 
 @Component({
   selector: 'app-header',
@@ -7,12 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  title: string = 'Tracking-app';
+  title: string = 'Tracking App';
 
   toggleAddTask() {
     console.log('toggle')
   }
   ngOnInit(): void {
-
+     
   }
 }

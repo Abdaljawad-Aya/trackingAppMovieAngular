@@ -1,0 +1,30 @@
+ <nb-card>
+   <nb-card-body>
+     <form (ngSubmit)="onSubmit()">
+
+       <div>
+         <input nbInput type="text"  fieldSize="giant" name="text" [(ngModel)]="Title" id="text"
+           placeholder="Add Movie" />
+         <input nbInput type="text"  fieldSize="giant" name="day" [(ngModel)]="Type" id="day"
+           placeholder="Add Type" />
+       </div>
+       <div class="left">
+         <input nbInput type="text"  fieldSize="giant" name="text" [(ngModel)]="Poster" id="text"
+           placeholder="Movie Image Link" />
+         <input nbInput type="number"  fieldSize="giant" name="text" [(ngModel)]="Year" id="text"
+           placeholder="Add Year" />
+         <input nbInput type="number"  fieldSize="giant" name="text" [(ngModel)]="imdbID" id="text"
+           placeholder="Add imdbID" />
+       </div>
+       <div>
+         <!-- <nb-checkbox name="checked" id="checked" [(ngModel)]="checked" status="success">Check</nb-checkbox> -->
+         <!-- <input type="checkbox" name="checked"  id="checked" /> -->
+       </div>
+       <br>
+       <div>
+       
+         <button type="submit" nbButton>Save Movie</button>
+       </div>
+     </form>
+   </nb-card-body>
+ </nb-card>
