@@ -12,7 +12,14 @@
         justify-content: space-between;
         font-weight: bold;
       }
-
+      .justify {
+        position: absolute;
+        bottom: 60px;
+      }
+      p {
+        font-size: 1.2rem;
+         
+      }
       img {
         float:right;
         width: 150px;

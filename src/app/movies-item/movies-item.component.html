@@ -3,11 +3,13 @@
     <!-- if the movie is featured then display a colored border -->
     <!-- used an event called dblclick then passed in the task-->
     <h4>{{ movie.Title }}
-      <nb-icon (click)="onDelete(movie)" icon="trash-2"></nb-icon>
+      <nb-icon (click)="onDelete(movie)" icon="power-outline" [options]="{ animation: { type: 'zoom' } }"></nb-icon>
     </h4>
-    <p><b>Year:   </b>{{ movie.Year }}</p>
-    <p><b>imdbID: </b>{{ movie.imdbID }}</p>
-    <p><b>Type:   </b>{{ movie.Type }}</p>
+    <div class="justify">
+      <p><b>Year: </b>{{ movie.Year }}</p>
+      <p><b>imdbID: </b>{{ movie.imdbID }}</p>
+      <p><b>Type: </b>{{ movie.Type }}</p>
+    </div>
     <img src="{{ movie.Poster }}" alt="" style="width:20%">
   </nb-card-body>
 </nb-card>

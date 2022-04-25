@@ -1,15 +1,6 @@
 {
   "movies": [
     {
-      "id": 2,
-      "Title": "Batman v Superman: Dawn of Justice",
-      "Year": "2016",
-      "imdbID": "tt2975590",
-      "Feature": false,
-      "Type": "movie",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BYThjYzcyYzItNTVjNy00NDk0LTgwMWQtYjMwNmNlNWJhMzMyXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
-    },
-    {
       "id": 4,
       "Title": "The Batman",
       "Year": "2022",
@@ -125,14 +116,6 @@
       "Feature": false,
       "Type": "movie",
       "Poster": "https://m.media-amazon.com/images/M/MV5BMTI5NDY1NDU1M15BMl5BanBnXkFtZTcwODcyNTMyMQ@@._V1_SX300.jpg"
-    },
-    {
-      "Title": "Dude, Where's My Car?",
-      "Type": "Comedy",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BNzRmN2NjNzktOWE1My00NjVlLWFhNjYtZmFkMzM5YTA2ZTFlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
-      "Year": 2000,
-      "imdbID": 242423,
-      "id": 19
     }
   ]
 }

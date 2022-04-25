@@ -8,8 +8,8 @@ import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 })
 export class ButtonComponent implements OnInit {
   // this Input(metadata) is a reusable way I can use it anywhere
-  @Input() text:any;
-  // @Input() color: any;
+  @Input() text!:string;
+  @Input() color!:string;
   // Outputting the eventemitter
   @Output() btnClick = new EventEmitter();
   constructor() { }
@@ -21,6 +21,7 @@ export class ButtonComponent implements OnInit {
     // emitting the button click which I set it up , in the @Output.
     // in the header component in the <app-button></app-button>
     this.btnClick.emit();
+    // console.log('Add');
   }
   
 

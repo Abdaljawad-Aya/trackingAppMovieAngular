@@ -1,6 +1,6 @@
  <nb-card>
    <nb-card-body>
-     <form (ngSubmit)="onSubmit()">
+     <form *ngIf="showAddMovie" (ngSubmit)="onSubmit()">
 
        <div>
          <input nbInput type="text"  fieldSize="giant" name="text" [(ngModel)]="Title" id="text"

@@ -4,8 +4,11 @@
        and fire it off in the header.component.ts 
   -->
     <!-- <nb-layout-column> -->
-    <!-- color="green" text="ADD" -->
-      <app-button text="ADD" (btnClick)="toggleAddTask()">
+    <!-- red and green -->
+      <app-button 
+         color="{{ showAddMovie ? '#ff3d71' : '#2ce69b' }}" 
+         text="{{ showAddMovie ? 'Close' : 'Add' }}"  
+         (btnClick)="toggleAddMovie()">
       </app-button>
       </nb-layout-header>
     <!-- </nb-layout-column> -->

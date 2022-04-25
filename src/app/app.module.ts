@@ -1,6 +1,5 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
 // for making an Api call connection with the internet so I 
 // imported HttpClientModule and supports XSRF is type of mailcious exploit
 // of a website where an authorized commands are submitted from the user that 
@@ -17,7 +16,8 @@ import {
   NbCheckboxModule,
   NbDatepickerModule
 } from '@nebular/theme';
-import { FormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+import { Router, RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
@@ -28,6 +28,10 @@ import { MoviesComponent } from './movies/movies.component';
 import { MoviesItemComponent } from './movies-item/movies-item.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AddMovieComponent } from './add-movie/add-movie.component';
+
+
+const appRoutes: Routes = [{path: '', component: MoviesComponent}]
+
 
 @NgModule({
   declarations: [
@@ -40,7 +44,7 @@ import { AddMovieComponent } from './add-movie/add-movie.component';
   ],
   imports: [
     HttpClientModule,
-    RouterModule,
+    RouterModule.forRoot(appRoutes, {enableTracing:true}),
     NbCardModule,
     NbLayoutModule,
     NbSidebarModule,
