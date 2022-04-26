@@ -1,7 +1,8 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Movie } from '../Movie';
+
 import { UiService } from '../ui.service';
 import { Subscription } from 'rxjs';
-import { Movie } from '../Movie';
 @Component({
   selector: 'app-add-movie',
   templateUrl: './add-movie.component.html',
@@ -19,7 +20,7 @@ export class AddMovieComponent implements OnInit {
   showAddMovie!: boolean;
   subscription: Subscription;
 
-
+  // to use uiService, passed in the constructor
   constructor(private uiService:UiService) {
      this.subscription = this.uiService.onToggle()
         .subscribe((value) => (this.showAddMovie = value));
@@ -28,7 +29,6 @@ export class AddMovieComponent implements OnInit {
   ngOnInit(): void {
 
   }
-
 
   // toggle(checked: boolean) {
   //   this.checked = checked;

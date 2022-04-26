@@ -1,15 +1,23 @@
-<nb-layout>
 <nb-layout-header fixed> <h1>{{ title }}</h1>
     <!-- catching the button emtting over here toggleAddTask() 
        and fire it off in the header.component.ts 
   -->
+    <div class="btn-container">
+      <button nbButton status="primary">
+       <a class="btn" routerLink="/">Home</a>
+      
+      </button>
+      <button nbButton status="primary">
+         <a class="btn" routerLink="bookmark">Bookmark</a>
+      </button>
+    </div>
     <!-- <nb-layout-column> -->
     <!-- red and green -->
       <app-button 
+         *ngIf="hasRoute('/')"
          color="{{ showAddMovie ? '#ff3d71' : '#2ce69b' }}" 
          text="{{ showAddMovie ? 'Close' : 'Add' }}"  
          (btnClick)="toggleAddMovie()">
       </app-button>
       </nb-layout-header>
     <!-- </nb-layout-column> -->
-</nb-layout>

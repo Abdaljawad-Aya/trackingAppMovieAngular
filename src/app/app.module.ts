@@ -28,9 +28,13 @@ import { MoviesComponent } from './movies/movies.component';
 import { MoviesItemComponent } from './movies-item/movies-item.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AddMovieComponent } from './add-movie/add-movie.component';
+import { BookmarkComponent } from './bookmark/bookmark.component';
 
 
-const appRoutes: Routes = [{path: '', component: MoviesComponent}]
+const appRoutes: Routes = [
+  {path: '', component: MoviesComponent},
+  {path: 'bookmark',component: BookmarkComponent},
+  ]
 
 
 @NgModule({
@@ -40,10 +44,12 @@ const appRoutes: Routes = [{path: '', component: MoviesComponent}]
     ButtonComponent,
     MoviesComponent,
     MoviesItemComponent,
-    AddMovieComponent
+    AddMovieComponent,
+    BookmarkComponent
   ],
   imports: [
     HttpClientModule,
+    // enableTracting is for debuging
     RouterModule.forRoot(appRoutes, {enableTracing:true}),
     NbCardModule,
     NbLayoutModule,

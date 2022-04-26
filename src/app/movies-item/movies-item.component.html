@@ -1,7 +1,10 @@
 <nb-card>
-  <nb-card-body [ngClass]="{Feature: movie.Feature}" class="movie" (dblclick)="onToggle(movie)">
+  <nb-card-body>
+  <!-- you can use (dblclick) or (click) I'm going to use (click) -->
+    <nb-icon (click)="onToggle(movie)" class="bookmark_icon" nbPrefix icon="bookmark" pack="eva"
+      [ngClass]="{Feature : movie.Feature}"></nb-icon>
     <!-- if the movie is featured then display a colored border -->
-    <!-- used an event called dblclick then passed in the task-->
+    <!-- used an event called dblclick then passed in the task right over to the database json-->
     <h4>{{ movie.Title }}
       <nb-icon (click)="onDelete(movie)" icon="power-outline" [options]="{ animation: { type: 'zoom' } }"></nb-icon>
     </h4>

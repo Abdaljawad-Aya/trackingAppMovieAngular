@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-// import { ApiService } from "../api.service";
 import { UiService } from "../ui.service";
+
+import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
   title: string = 'Tracking App';
@@ -14,8 +15,9 @@ export class HeaderComponent implements OnInit {
   showAddMovie: boolean = false;
   subscription!: Subscription;
 
+  // in order to use a service I have to added to the constructor
+  constructor(private uiService:UiService, private router:Router) {
 
-  constructor(private uiService:UiService) {
     this.subscription = this.uiService.onToggle()
         .subscribe((value) => (this.showAddMovie = value));
   }
@@ -26,7 +28,10 @@ export class HeaderComponent implements OnInit {
     // toggleAddMovie from ui.service.ts
     this.uiService.toggleAddMovie();
   }
-  ngOnInit(): void {
-     
+
+  // 
+  hasRoute(route:string) {
+    return this.router.url === route;
   }
+  ngOnInit(): void {}
 }

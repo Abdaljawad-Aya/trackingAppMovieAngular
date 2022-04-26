@@ -11,7 +11,11 @@ import { Observable, Subject } from 'rxjs';
 export class UiService {
   // which its goning to represent if its showing or not
   private showAddMovie: boolean = false;
-  // 
+  // find a subject
+  // A Subject is a special type of Obeservable that allows values to be 
+  // multicasted to many Obeservable.
+  // while plain Obeservables are unicast(each subscribed 
+  // Observer owns an independent execution of the Observable)
   private subject = new Subject<any>();
   constructor() { }
 
@@ -31,3 +35,5 @@ export class UiService {
     return this.subject.asObservable();
   }
 }
+
+//  responsed to spesific event's and multiplie components

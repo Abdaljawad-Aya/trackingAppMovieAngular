@@ -1,0 +1,29 @@
+<h3>You Have {{ bookmarks.length }} bookmarked movies</h3>
+
+<div *ngIf="bookmarks.length > 0">
+<div *ngFor="let movie of bookmarks">
+<nb-card>
+  <nb-card-body >
+    <div class="">
+      <img src="{{ movie }}" alt="{{ movie }}">
+    </div>
+    <div class="movie-content-container">
+        <nb-icon
+          (click)="removeBookmark(movie)"
+          icon="bookmark"
+          pack="eva"
+        ></nb-icon>
+        <div class="">
+           <h5>{{ movie }}</h5>
+        </div>
+        <div class="">
+          <div class="">
+             <p>Type: {{ movie }}</p>
+             <p>Year: {{ movie }}</p>
+          </div>
+        </div>
+    </div>
+  </nb-card-body>
+</nb-card>
+</div>
+</div>

@@ -1,10 +1,11 @@
 /* host tragting element inside the component's templates
        The host element is in parent component's template
      */
-      .movie.Feature {
+     /* movie styling */
+      /* .movie.Feature {
         border-left: 6px solid green;
         border-radius: 12px;
-      }
+      } */
 
       h4 {
         display: flex;
@@ -23,4 +24,18 @@
       img {
         float:right;
         width: 150px;
+      }
+
+      /* bookmark styling */
+
+      .bookmark_icon{
+         font-size: 2rem;
+         color: rgb(83, 83, 83);
+         position: absolute;
+      }
+      .bookmark_icon:hover {
+        color: #ff3d71;
+      }
+      .Feature {
+        color:#ff3d71 !important;
       }

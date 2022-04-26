@@ -60,8 +60,10 @@ export class MovieService {
   }
 
   addMovie(movie: Movie):Observable<Movie> {
-    return this.http.post<Movie>(this.apiUrl, movie, httpOptions)
+    // used httpOption because I want to submit data.
+    return this.http.post<Movie>(this.apiUrl, movie, httpOptions);
   } 
+  
  }
 
 

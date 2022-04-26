@@ -49,13 +49,22 @@ export class MoviesComponent implements OnInit {
     // and it also reflect on my db.json
     movie.Feature = !movie.Feature;
     this.movieService.updateMovieFeature(movie).subscribe()
-    // console.log(movie.Feature);
+    // console.log(123);
   }
 
   addMovie(movie: Movie) {
     // console.log(movie);
+    // addMovie and passing that specific movie 
     this.movieService.addMovie(movie)
+        //  and get back with a single movie 
+        //  and push it
         .subscribe((movie) => (this.movies.push(movie)));
+  } 
+  
+  bookmarks = [];
+  getMovieDetails(movie:any) {
+  
+    
   }
 
 }

@@ -1,0 +1,12 @@
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    flex: 1;
+}
+.btn {
+    border: none;
+    text-align: center;
+    text-decoration: none!important;
+    display: inline-block;
+}

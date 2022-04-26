@@ -1,12 +1,12 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Movie } from "../Movie";
-
+import { MovieService } from '../movie.service';
 // import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-movies-item',
   templateUrl: './movies-item.component.html',
-  styleUrls:['./movies-item.component.css']
+  styleUrls: ['./movies-item.component.css']
 })
 export class MoviesItemComponent implements OnInit {
   // from what i understand is Typescript 2.7 an above 
@@ -17,25 +17,28 @@ export class MoviesItemComponent implements OnInit {
 
   // since there is onDeleteMovie() I will go to the parent component
   // beacuse there we have the child component  
-  @Output() onDeleteMovie: EventEmitter<Movie> = new 
-  EventEmitter();
+  @Output() onDeleteMovie: EventEmitter<Movie> = new
+    EventEmitter();
   // onToggle for the movies item component
-  @Output() onToggleFeatured: EventEmitter<Movie> = new 
-  EventEmitter();
+  @Output() onToggleFeatured: EventEmitter<Movie> = new
+    EventEmitter();
 
-  // faTimes = faTimes;
-  constructor() { }
+  bookmarks: any;
+  constructor(private movieService: MovieService) { }
 
-  ngOnInit(): void {}
- 
+
+  ngOnInit(): void { }
+
   // onDelete(movie:any) {
   //   console.log(movie);
   // }
-  onDelete(movie:any) {
+  onDelete(movie: any) {
     this.onDeleteMovie.emit(movie);
   }
   // defined onToggle over here
-  onToggle(movie:any) {
+  onToggle(movie: any) {
     this.onToggleFeatured.emit(movie);
   }
+  
+
 }

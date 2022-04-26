@@ -2,7 +2,8 @@
 <app-add-movie (onAddMovie)="addMovie($event)"></app-add-movie>
 <app-movies-item 
    *ngFor="let movie of movies" 
-   [movie]="movie"  
+   [movie]="movie" 
+   (click)="getMovieDetails(movie)" 
    (onDeleteMovie)="deleteMovie(movie)"
    (onToggleFeatured)="toggleFeatured(movie)"  
 ></app-movies-item>
